@@ -53,7 +53,7 @@ def connect_tcp_socket() -> sqlalchemy.engine.base.Engine:
         # Equivalent URL:
         # mysql+pymysql://<db_user>:<db_pass>@<db_host>:<db_port>/<db_name>
         sqlalchemy.engine.url.URL.create(
-            drivername="mysql+pymysql",
+            drivername="mysql+mysqlconnector",
             username=db_user,
             password=db_pass,
             host=db_host,
